@@ -1,0 +1,669 @@
+$header-color: #D8DBE2;
+$main-color: #15748f;
+$font-size-footer: 1.3rem;
+$perdigon-color: #373F51;
+$footer-color: #373F51;
+
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto Slab', serif;
+    font-size: 62,5%;
+
+}
+//aplicacion de condicional//
+header {
+		background-color: $header-color;
+	}
+
+main {
+	background-color: $main-color;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.perdigonLogo {
+	color: #373F51;
+	font-size: 7rem;
+	display: inline-block;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 3rem;
+	font-style: italic;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	background-color: #A9BCD0;
+	border-top: 2px solid #4094d8;
+	border-bottom: 2px solid #4094d8;		
+	padding: 12px;
+	width: 100%;
+
+}
+
+
+nav li {
+	display: inline-block;
+	padding: 9px;
+	font-weight: bold;
+	position: relative;
+}
+
+.navLiInput1 {
+	border-radius: 1em;
+	padding: 4px;
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+
+
+.navLiInput2 {
+	background-color: white;
+	margin-left: 10px;
+	margin-right: 50px;
+	padding: 3px;
+	border-radius: 1em;
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+.navLi a {
+	text-decoration: none;
+	color: white;
+	font-size: 2.5rem;
+	transition-property: color, border-top;
+	transition-duration: 1s;
+}
+
+.navLi:hover >a {
+	color: black;
+	border-bottom: 1px solid #4094d8;
+
+}
+
+.navLi{
+    ul {
+	position: absolute;
+	display: none;
+    }    
+}
+
+
+.navLi:hover ul {
+	display: block;
+	background-color: #A9BCD0;
+	border: 2px solid #4094d8;
+}
+
+.titulo {
+	font-size: 3rem;
+	color: $perdigon-color;
+	margin-bottom: 30px;
+	padding-top: 20px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.subtitulo {
+	font-size: 2rem;
+	text-align: justify;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+	background-color: $footer-color;
+	border-top: 2px solid black;
+	height: 160px;
+}
+
+.footer--H4 {
+	padding: 9px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	font-style: italic;
+	color: white;
+}
+
+.footer__Ul {
+	margin-top: 15px;
+}
+.footer__Ul--Li {
+	display: inline-block;
+	padding: 9px;
+	font-size: $font-size-footer;
+}
+
+.footer__Ul--Li {
+    a {
+	text-decoration: none;
+	color: rgb(244, 126, 33);
+	transition-property: color;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+    }
+}
+
+.footer__Ul--Li:hover >a {
+	color: #F7EF81;
+	text-decoration: none;
+}
+
+
+/*@media*/
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.perdigonImg{
+		width: 125px;
+		height: 40px;
+	}
+
+
+	.escudoPlatenseImg {
+		width: 25px;
+		height: 30px;
+		margin-left: 20px;
+	}
+
+
+	.perdigonLogo {
+		font-size: 2.5rem;
+		margin-left: 0px;
+	}
+
+
+	h2 {
+		font-size: 2rem;
+		color: white;
+	}
+	
+	.nav {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: end;
+		background-color: orange;
+	}
+
+	.navLi a{
+		font-size: 1.5rem;
+	}
+
+	.navLiInput1 {
+		font-size: 1rem;	
+	}
+	
+	.navLiInput2 {
+		font-size: 1rem;
+		margin-right: 0px;
+	}
+	.mainIndexSection2 {
+		color: royalblue;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+
+		header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.perdigonImg{
+		width: 175px;
+		height: 60px;
+		margin-top: 10px;
+	}
+
+
+	.escudoPlatenseImg {
+		width: 35px;
+		height: 40px;
+		margin-left: 20px;
+		margin-bottom: 5px;
+	}
+
+
+	.perdigonLogo {
+		font-size: 2.8rem;
+		margin-left: 0px;
+		font-style: normal;
+	}
+
+
+	h2 {
+		font-size: 2rem;
+		
+	}
+	
+	.nav {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: start;
+		background-color: #0FA3B1;
+	}
+
+	.navLi {
+        a{
+		font-size: 1.8rem;
+        }
+	}
+
+	.navLiInput1 {
+		width: 150px;
+		font-size: 1rem;	
+	}
+	
+	.navLiInput2 {
+		width: 50px;
+		height: 25px;
+		font-size: 1rem;
+		margin-right: 0px;
+	}
+
+	.navLi:hover ul {
+		display: block;
+		background-color: #0FA3B1;
+		border: 2px solid #F7EF81;
+	}
+	
+	.mainIndex {
+		background-color: #A9BCD0;
+	}
+	.mainIndexSection2 {
+		color: white;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1470px) {
+	
+
+	.perdigonImg{
+		width: 220px;
+		height: 75px;
+	}
+
+
+	.escudoPlatenseImg {
+		width: 30px;
+		height: 35px;
+		margin-left: 20px;
+	}
+
+
+	.perdigonLogo {
+		font-size: 5.5rem;
+		margin-left: 0px;
+	}
+
+
+	h2 {
+		font-size: 2.5rem;
+		color: black;
+	}
+	
+	.nav {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: end;
+		background-color: #CFE795;
+		border-top: 2px solid #F7EF81;
+		border-bottom: 2px solid #F7EF81;
+	
+	}
+
+	.navLi a{
+		font-size: 2.5rem;
+	}
+
+	.navLiInput1 {
+		font-size: 1.5rem;	
+	}
+	
+	.navLiInput2 {
+		font-size: 1.5rem;
+		margin-right: 0px;
+	}
+	.mainIndexSection2 {
+		color: royalblue;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 658px) {
+	.footer {
+		height: fit-content;
+		padding-top: 20px;
+	}
+	.footer__Ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	iframe {
+		margin-top: 20px;
+	}
+
+
+}
+
+
+/*secciones*/
+
+/* index.html */
+
+.main__Index {
+	flex-grow: 1;
+}
+
+.main__Index--Logo {
+	width: 300px;
+	height: 200px;
+}
+
+.main__Index--Productos {
+	width: 300px;
+	height: 300px;
+}
+
+.main__index--Section0 {
+	border-bottom: 2px solid black;
+	div {
+		padding: 20px;
+		a{
+			text-decoration: none;
+			color: black;
+			font-size: 2rem;
+		}
+		i{
+			padding-right: 25px;
+		}
+	}
+}
+
+
+.main__Index--Section1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+		.main__Index--Productos {
+			margin-bottom: 20px;
+		}
+}
+
+
+.mainInput {
+	margin: 20px;
+}
+/* Nosotros.html*/
+
+
+.main__Nosotros--Section {
+	display: grid;
+	grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+	grid-template-rows: 1fr, 1fr, 1fr;
+	justify-items: space-between;
+	align-items: center;
+	img {
+		width: 1fr;
+		height: 1fr;
+	}
+
+
+
+}
+.main__Nosotros--Section-Article {
+	display: grid;
+	grid-template-columns: 1fr, 1fr;
+	grid-template-rows: 1fr, 1fr;
+
+	.main__Nosotros--Section-Article-Parrafo {
+	color: whitesmoke;
+	font-size: 2rem;
+	padding: 10px;
+	text-transform: capitalize;
+	line-height: 40px;
+	word-spacing: 1rem;
+	border-radius: 1rem;
+	text-align: justify;
+	font-style: italic;
+	}
+}
+
+/* Dondecomprar.html */
+
+.main__Dondecomprar {
+	flex-grow: 1;
+}
+
+.main__dondecomprar__section {
+	display: flex;
+	flex-flow: row nowrap;
+	flex-grow: 0;
+	}
+
+.main-dondecomprar__section-article1 {
+		margin-top: 50px;
+	}
+
+.main-dondecomprar__section-article {
+	margin-top: 100px;
+}
+
+
+.main__dondecomprar--section-div-input1 {
+	width: 350px;
+	height: 35px;
+	padding: 9px;
+	font-size: 1rem;
+	border-radius: 1rem;
+	padding: 2px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.main-dondecomprar__section__div-input2 {
+	font-size: 1rem;
+	height: 30px;
+	width: 75px;
+}
+
+
+.main__dondecomprar--section-div-googlemaps {
+		border-radius: 2rem;
+			}
+
+/*Productos.html*/
+
+.main__Productos {
+	flex-grow: 1;
+}
+
+th {
+	color: grey;
+	font-size: 2rem;
+	padding: 9px;
+}
+
+td {
+	color: white;
+	font-size: 2rem;
+	padding-right: 50px;
+}
+
+td {
+	ul{
+		li{
+		font-size: 2rem;
+		list-style-type: circle;
+		list-style-position: outside;
+		}
+	}
+}
+
+
+.main__Productos {
+	table {
+		flex-grow: 1;
+		border: $perdigon-color;
+		border-radius: 1rem;
+		background-color: $header-color;
+		background-size: cover;
+		display: inline-block;
+		width: 100%;
+		height: 675px;
+	}
+}
+
+.main__Section--Deshidratador {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 100px;
+	justify-items: center;
+}
+
+.main__Section--Deshidratador-Producto {
+	border-radius: 1rem;
+	color: white;
+	font-size: 5rem;
+}
+
+.imgGaleria {
+	width: 300px;
+	height:  300px;
+	margin-bottom: 10px;
+	transition: all 1s;
+}
+
+.imgGaleria:hover {
+	transform: scale(1.1);
+}
+
+.descripcionProductoTitulo {
+	font-size: 2rem;
+
+}
+
+/*Contacto.html*/
+
+
+.main__contacto {
+	div{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+				a {
+				text-decoration: none;
+				padding: 20px;
+				color: white;
+				font-size: 3rem;
+				transition-property: color;
+				transition-duration: 1s;
+				}
+
+			}
+
+.main__contacto div:hover >a {
+	color: $perdigon-color;
+	text-decoration: none;
+}
+.textoTitulo {
+	font-size: 3rem;
+	color: #373F51;
+	margin-bottom: 30px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.textoSubtituloContacto {
+	font-size: 2rem;
+}
+
+.fab fa-instagram {
+	size: 2000px;
+}
+
+
+/*Formulario Empresas.html*/
+
+.mainPerdigonEmpresa {
+	flex-grow: 1;
+}
+
+.mainPerdigonEmpresaFormulario {
+	margin: 10px;
+	padding: 9px 0px 30px;
+	width: 600px;
+	height: 700px;
+}
+
+.mainPerdigonEmpresaFormularioFieldset {
+	background-color: rgb(232, 212, 162);
+	color: whitesmoke;
+	font-size: 3rem;
+	padding: 5px;
+}
+
+
+.mainPerdigonEmpresaFormularioFieldsetInput {
+	font-size: 2rem;
+	display: block;
+	padding: 2px;
+	transition: all 3s;
+}
+
+.mainPerdigonEmpresaFormularioFieldsetInput:focus {
+	width: 350px;
+	font-size: 3rem;
+	}
+
+/*Formulario Particulares.html*/
+
+.mainPerdigonParticulares {
+	flex-grow: 1;
+}
+
+.mainPerdigonParticularesFormulario {
+	margin: 10px;
+	padding: 9px 0px 30px;
+	width: 600px;
+	height: 700px;
+}
+
+.mainPerdigonParticularesFormularioFieldset {
+	background-color: rgb(232, 212, 162);
+	color: whitesmoke;
+	font-size: 3rem;
+	padding: 5px;
+}
+
+
+.mainPerdigonParticularesFormularioFieldsetInput {
+	font-size: 2rem;
+	display: block;
+	padding: 2px;
+}
